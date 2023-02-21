@@ -1,8 +1,8 @@
 from django.db.models.query import QuerySet
-from posts.models import Group, Post
 from rest_framework import viewsets
 from rest_framework.generics import get_object_or_404
 
+from posts.models import Group, Post
 from .permissions import OwnerOrReadonly
 from .serializers import CommentSerializer, GroupSerializer, PostSerializer
 
